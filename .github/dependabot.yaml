@@ -1,0 +1,37 @@
+version: 2
+
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: semiannually
+    groups:
+      all_dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: uv
+    directory: /
+    schedule:
+      interval: semiannually
+
+  - package-ecosystem: npm
+    directory: /locust/webui
+    schedule:
+      interval: semiannually
+    groups:
+      eslint:
+        patterns:
+          - "*eslint*"
+      vite:
+        patterns:
+          - "*vite*"
+      react:
+        patterns:
+          - "*react*"
+      emotion:
+        patterns:
+          - "*emotion*"
+      mui:
+        patterns:
+          - "*mui*"
