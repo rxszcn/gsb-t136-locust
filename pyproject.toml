@@ -94,7 +94,7 @@ docs = [
     "Sphinx-Substitution-Extensions==2020.9.30.0",
     "pygments>=2.21.0",
     "alabaster==0.7.16",
-    "babel==2.13.0",
+    "babel==2.18.0",
     "docutils==0.21.2",
     "imagesize==1.4.1",
     "snowballstemmer==3.0.1",
